@@ -1,0 +1,7 @@
+<div *ngFor="let alum of alumnos">
+    <p>
+        {{alum.nombre}} {{alum.apellidos}}
+         <a [routerLink]="['/actualizar/', alum.idAlumno]" class="btn btn-success">Actualizar</a>
+    </p>
+</div>
+
